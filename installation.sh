@@ -1,0 +1,1 @@
+aws ssm send-command --document-name "AWS-RunShellScript" --targets '{"Key":"tag:Stack","Values":["PLACEHOLDER_1"]}' --parameters '{"commands":["yum install PLACEHOLDER_2 -y"],"executionTimeout":["3600"]}' --timeout-seconds 600 --region us-west-2
